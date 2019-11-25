@@ -16,7 +16,6 @@ for line in sys.stdin:
 
     while current_date != date:
         if not (current_temp1 and current_temp2):
-            # print('%d\t-99' % (current_date))
             print('-99')
         current_temp1 = None
         current_temp2 = None
@@ -29,11 +28,9 @@ for line in sys.stdin:
         current_temp2 = temp
         # Note: this method assumes that TMAX will always be greater than or equal to TMIN
         current_temp_diff = abs(current_temp1 - current_temp2) / 10
-        # print('%d\t%.1f' % (current_date, current_temp_diff))
         print('%.1f' % (current_temp_diff))
     else:
         current_temp1 = temp
 
 if not (current_temp1 and current_temp2):
-    # print('%d\t-99' % (current_date))
     print('-99')

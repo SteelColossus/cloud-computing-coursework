@@ -4,7 +4,8 @@
 import sys
 from datetime import datetime
 
-station_id_to_capture = 'UK000003377' # Either UK000056225 (Oxford) or UK000003377 (Waddington)
+# Either UK000056225 (Oxford) or UK000003377 (Waddington)
+station_id_to_capture = 'UK000056225'
 
 for line in sys.stdin:
     line = line.strip()
